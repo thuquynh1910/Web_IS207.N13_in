@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quin Quin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/img/qr_code.png">
+</head>
+<body>
+    <div class="app">
+        <header class ="header">
+            <div class ="grid">
+                <nav class="header__navbar">
+                     <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr">
+                            Kết nối với Walky Store tại hotline: 1234567890
+                            <div class="header__qr">
+                                <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/ggplay.png" alt="Google Play" class="header__pr-dl-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/appstore.png" alt="App Store" class="header__pr-dl-img">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                     <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header_navbar-item-link">
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fa-regular fa-bell"></i>
+                                </a>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--read">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/g1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Sneaker String</span>
+                                                <p class="header__notify-description">Thiết kế cổ cao, phối màu bắt mắt và có nhiều màu sắc cho bạn thoải mái lựa chọn</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/g2.jpg"alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Sneaker Royal</span>
+                                                <p class="header__notify-description">Sneaker royal thiết kế kiểu dáng năng động. Phối màu sắc ở phần gót chân đầy nổi bật và thu hút</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/g3.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Sneaker Astronaut</span>
+                                                <p class="header__notify-description">Thiết kế cổ cao buộc dây dễ dàng điều chỉnh và có nhiều màu sắc cho bạn thoải mái lựa chọn</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header_navbar-item-link">
+                                <a href="" class="header__navbar-icon-libk">
+                                    <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                </a>
+                                Trợ giúp</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                     </ul>
+                </nav>
+                <!-- header-with-search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                       <!-- <img src="./logo waiky shoes.png" alt="Logo"> -->
+                    </div>
+                    <div class="header__search">
+
+                    </div>
+                    <div class="header__cart">
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div>
+
+            <footer class="footer">
+
+            </footer>
+        </div>
+    </div>
+    <!-- Modal layout -->
+    <class class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            <!-- Register form-->
+            
+              <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, các bạn vui lòng xem và chấp nhận các điều khoản của Walky Store
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back">TRỞ VỀ</button>
+                        <button class="btn btn-primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                    
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--size-s btn--withicon btn--mau">
+                        <i class="btn--with-icon fa-brands fa-facebook"></i>
+                        Kết nối với Facebook
+                    </a>
+                    <a href="" class="btn btn--size-s btn--withicon">
+                        <i class="btn--with-icon fa-brands fa-google"></i>
+                        Kết nối với Google
+                    </a>
+                </div>
+            </div>
+             
+            <!-- Login form-->
+             <!-- <div class="auth-form"> 
+               <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-link-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back">TRỞ VỀ</button>
+                        <button class="btn btn-primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                    
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--size-s btn--withicon btn--mau">
+                        <i class="btn--with-icon fa-brands fa-facebook"></i>
+                        Đăng nhập với Facebook
+                    </a>
+                    <a href="" class="btn btn--size-s btn--withicon">
+                        <i class="btn--with-icon fa-brands fa-google"></i>
+                        Đăng nhập với Google
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    </class> 
+    <!-- Khung tìm kiếm -->
+    <div>
+
+    </div>
+</body>
+</html>
