@@ -1,0 +1,88 @@
+#footer {
+    background-color: rgb(180,225,230);
+    padding: 20px 0 50px 0;
+    margin: 0;
+}
+
+#logo-shop {
+    width: 90px;
+    height: 70px;
+    margin-bottom: 0;
+}
+
+hr {
+        color: black;
+        background-color: black;
+        border: none;
+    }
+#hr1 {
+    width: 900px;
+    height: 0.97px;
+    align-content: center;
+    color: black;
+    margin-top: 0;
+}
+
+#hr2 {
+    width: 1100px;
+    height: 1px;
+    align-content: center;
+    color: black;
+    margin-bottom: 0;
+}
+
+#Context-footer {
+    display: flex;
+    content: "";
+    clear: both;
+    margin-top: 0;
+    margin-left: 120px;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+#footer-1 {
+    text-align: left;
+    margin-right: 50px;
+    padding: 0;
+}
+#footer-1 p {
+    font-size: 15px;
+}
+
+#footer-2 { 
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+#footer-2-1 {
+    margin: 0;
+    padding: 0;
+    column-count: 2;
+    clear: both;
+    justify-content: space-around;
+}
+#footer-2-1 a,#footer-3 a {
+
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+#footer-3 {
+    margin-right: 50px;
+}
+
+#map {
+    width: 230px;
+    height: 180px;
+    margin-top: 10px;
+    padding-right: 0;
+    flex: 25%;
+}
