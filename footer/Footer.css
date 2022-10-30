@@ -86,3 +86,14 @@ h4 {
     padding-right: 0;
     flex: 25%;
 }
+
+.logo-f {
+    border-radius: 30px ;
+    margin-left: 50px;
+}
+
+#context-2 {
+    margin-left: 350px;
+    display: flex;
+    clear: both;
+}
