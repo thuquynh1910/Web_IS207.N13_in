@@ -1,0 +1,695 @@
+.header {
+    height: 40px;
+    background-color: #B4E1E6;
+}
+
+.header_navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_navbar-list {
+    list-style: none;
+    display: inline-block;
+    margin-top: 13px;
+    margin-right: 100px;
+    font-size: 13px;
+}
+
+.header_navbar-item {
+    display: inline-block;
+    margin: 0 8px;
+    position: relative;
+}
+
+.header_navbar-item-notify:hover .notify {
+    display: block;
+}
+
+.header_navbar-item-link {
+    text-decoration: none;
+}
+
+.header_navbar-list-main {
+    list-style: none;
+    display: inline-block;
+    margin-left: 120px;
+    margin-top: 4px;
+    font-size: 35px;
+    font-family: 'Shalimar',  cursive;
+}
+
+.header_navbar-item--strong {
+    font-weight: 700;
+}
+
+.header_navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 2px solid #000;
+    height: 15px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header_navbar-item--strong:hover {
+    cursor: pointer;
+    color: rgba(49, 45, 45, 0.7);
+}
+
+.header_navbar-icon {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header_navbar-list-icon {
+    margin-top: 8px;
+    margin-left: 200px;
+}
+
+.notify {
+    position:absolute;
+    top: 150%;
+    width: 404px;
+    right: 0;
+    border: 1px solid #f3f3f3;
+    background-color: var(--white-color);
+    transform-origin: calc(100% - 20px) top;
+    animation: NotifyGrowth ease-in 0.25s;
+    -webkit-animation: NotifyGrowth ease-in 0.25s;
+    -ms-animation: NotifyGrowth ease-in 0.25s;
+    -o-animation: NotifyGrowth ease-in 0.25s;
+    -moz-animation: NotifyGrowth ease-in 0.25s;
+    will-change: opacity, transform;
+    display: none;
+}
+
+.notify::before {
+    content: "";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position:absolute;
+    right: 4px;
+    top: -27px;
+}
+
+.notify::after {
+    content: "";
+    position:absolute;
+    display:block;
+    right: 0;
+    top: -16px;
+    width: 100%;
+    height: 20px;
+}
+@keyframes NotifyGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.notify-header h3 {
+    color: #999999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    user-select: none;
+}
+
+.notify-list {
+    padding-left: 0;
+}
+
+.notify-item {
+    display: flex;
+}
+
+.notify-item:hover {
+    background-color: #f7f7f7;
+}
+
+.notify-link {
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    text-decoration: none;
+    background-color: rgba(238, 75, 43, 0.08);
+    /* background-color: #e3f0f1; */
+
+}
+
+.notify-img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.notify-info {
+    margin-left: 12px;
+}
+
+.notify-name {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 400;
+}
+
+.notify-descriotion {
+    display: block;
+    font-size: 1.2rem;
+    color: #756F6E;
+    margin-top: 10px;
+}
+
+.notify-footer {
+    display:flex;
+}
+
+.notify-footer-btn {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 0px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+.container-1 {
+    height: 80px;
+}
+
+.center_navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 200px;
+    margin-top: -10px;
+    height: 90px;
+    width: 80px;
+}
+
+.search {
+    height: 40px;
+    width: 600px;
+    border: 2px solid #000;
+    margin-top: 17px;
+    margin-left: -40px;
+}
+
+.search-item {
+    display: inline-block;
+}
+
+.item-1 {
+    font-size: 18px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.item-2 {
+    color: #9C9494;
+    margin-left: 10px;
+}
+
+.item-3 {
+    background-color: #B4E1E6;
+    margin-left: 395px;
+    padding: 15px 15px 11px 15px;
+}
+.cart {
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+}
+
+.cart-1 {
+    padding-left: 35px;
+}
+
+.cart-2 {
+    font-size: 30px;
+    padding-left: 32px;
+}
+
+.circle{
+    display: inline-block;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    padding-top: 1px;
+    background: white;
+    border: 2px solid #000;
+    text-align: center;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------ */
+.container-2{
+    justify-content: space-between;
+}
+
+#menu{
+    border: 1px solid #499BA4;
+    height: 45px;
+    background-color: #499BA4;
+    font-size: 15px;
+}
+
+#menu ul{
+    margin-top:  13px;
+}
+
+#menu ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 0px 100px;
+}
+
+#menu ul li a:link {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 800;
+}
+              
+#menu ul li a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+              
+#menu ul li a:hover{
+    color: #000;
+    background-color: #B4E1E6;
+    font-weight: 800;
+}
+
+.text-1 {
+    width: 100px;
+    height: 100px;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    /* 
+        css đơn đã đặt
+
+    */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+    body {
+        background-color: #FFF9F9;
+    }
+    #donhang {
+        display: flex;
+        clear: both;
+        margin-top: 30px;
+        margin-right: 0;
+        background-color: #FFF9F9;
+    }
+
+    .infor-tk {
+        margin-left: 150px;
+    }
+    .taikhoan-kh {
+        clear: both;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .img-infor{
+        border-radius: 30px;
+        margin-right: 20px;
+    }
+    .name-tk {
+        font-size: 20px;
+    }
+    .infor-tk h3 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .infor-tk h3:hover {
+        color: #499BA4;
+        font-weight: bold;
+    }
+    .hoso ul, li {
+        margin-left: 150px;
+        text-decoration: none;
+    }
+    .hoso li, a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #000;
+        margin-bottom: 10px;
+    }
+    .hoso a:hover {
+        color: #499BA4;
+    }
+    #donhang hr {
+        color: black;
+        background: black;
+        border: 0;
+        height: 0.5px;
+        margin: 10px 0 20px; }
+
+.infor-dh {
+    margin-left: 150px;
+    width: 800px;
+
+}
+
+.infor-dh .search {
+    
+        height: 40px;
+        width: 800px;
+        border: 2px solid #000;
+        margin-top: 17px;
+        background-color: #FFF;
+
+}
+.infor-dh .search .search-item .item-2 {
+    color: #9C9494;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.danhsach-sp {
+    margin-top: 40px;
+    background-color: #FFF;
+    height: 800px;
+    width: 800px;
+    margin-left: -40px;
+}
+.danhsach-sp .sanpham {
+    display: flex;
+
+}
+.danhsach-sp .sanpham .anh-sp {
+    width: 150px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.danhsach-sp .sanpham .thongtin-sp {
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+}
+.danhsach-sp .sanpham .thongtin-sp .ten {
+    font-weight: bold;
+
+}
+.danhsach-sp .sanpham .thongtin-sp .phanloai {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #9C9494;
+}
+.danhsach-sp .sanpham .thongtin-sp .soluong {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #9C9494;
+}
+
+.sanpham .hoadon {
+    align-items: center;
+    text-align: right;
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 15px;
+}
+
+.hoadon .tong-tt {
+    font-weight: bold;
+}
+.hoadon .tien-tt {
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+.danhsach-sp hr {
+    height: 0.5px;
+    color: #939393;
+}
+/*logo liên hệ và logo thương hiệu */
+#logo-lh{
+    position: fixed;
+    left: 10px;
+}
+.lg-lh-icon {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.logo-ft {
+    padding: 30px;
+}
+
+/* hết nha*/
+
+ #footer {
+    background-color: #B4E1E6;
+    padding: 20px 0 50px 0;
+    margin: 0;
+}
+
+#logo-shop {
+    width: 90px;
+    height: 70px;
+    margin-bottom: 0;
+}
+
+hr {
+        color: black;
+        background-color: black;
+        border: none;
+    }
+#hr1 {
+    width: 900px;
+    height: 0.97px;
+    align-content: center;
+    color: black;
+    margin-top: 0;
+}
+
+#hr2 {
+    width: 1100px;
+    height: 1px;
+    align-content: center;
+    color: black;
+    margin-bottom: 0;
+}
+
+#Context-footer {
+    display: flex;
+    content: "";
+    clear: both;
+    margin-top: 30px;
+    margin-left: 250px;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#footer-1 {
+    text-align: left;
+    margin-right: 50px;
+    padding: 0;
+}
+#footer-1 p {
+    font-size: 15px;
+}
+
+#footer-2 { 
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+#footer-2-1 {
+    margin: 0;
+    padding: 0;
+    column-count: 2;
+    clear: both;
+    justify-content: space-around;
+}
+#footer-2-1 a,#footer-3 a {
+
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+#footer-3 {
+    margin-right: 50px;
+}
+
+#map {
+    width: 230px;
+    height: 180px;
+    margin-top: 10px;
+    padding-right: 0;
+    flex: 25%;
+}
+
+.map {
+
+    width: 230px;
+    height: 180px;
+    margin-top: 10px;
+    padding-right: 0;
+    flex: 25%;
+}
+.logo-f {
+    border-radius: 30px ;
+    margin-left: 50px;
+}
+
+#context-2 {
+    margin-left: 350px;
+    display: flex;
+    clear: both;
+} 
+/* --------------------------------------------------------------------------------------------------------------- */
+.auth-form-container {
+    padding: 32px;
+}
+
+.auth-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form-heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.auth-form-switch {
+    font-size: 1.6rem;
+    color:  #499BA4;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.auth-form-input {
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding:0 12px;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+.auth-form-input:focus {
+    border-color: #888;
+}
+
+.auth-form-aside {
+    margin-top: 25px;
+}
+
+.auth-form-policy-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.auth-form-text-link {
+    color:#499BA4;
+    text-decoration: none;
+}
+
+.auth-form-controls {
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back {
+    margin-right: 8px;
+}
+
+.auth-form-socials {
+    background-color: #f5f5f5;
+    padding: 16px 36px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.socials-icon {
+    font-size: 1.8rem;
+}
+
+.facebook.socials-icon {
+    color: var(--white-color);
+
+}
+
+.facebook{
+    color: var(--white-color);
+    background-color: #3A5398;
+}
+
+.facegoo {
+    margin: 0 36px;
+}
+
+.google {
+    background-color: red;
+    color: #fff;
+}
+
+.auth-form-help {
+    display:flex;
+    justify-content:flex-end;
+}
+
+.auth-form-help-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393
+}
+
+.auth-form-help-separate {
+    display:block;
+    height: 22px;
+    margin: -2px 16px 0;
+    border-left: 1px solid #EAEAEA;
+}
+
+.forgot {
+    color: red;
+}
+

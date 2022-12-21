@@ -1,0 +1,16 @@
+<!-- đăng kí tài khoản thành công -->
+<script>
+        var r = <?php echo json_encode($count_row); ?>
+        var r1 = <?php echo json_encode($count_row1); ?>
+        if(r1 > r){
+            Swal.fire(
+                "Chúc mừng!",
+                "Bạn đã đăng ký tài khoản thành công",
+                "success",
+            );
+        }
+</script>
+
+
+$count_row1
+đăng nhập không hiển thị
